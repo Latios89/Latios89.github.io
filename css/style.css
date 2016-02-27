@@ -1,0 +1,565 @@
+﻿*,
+*:after,
+*:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0; 
+}
+
+.clear::after {
+    content: " ";
+    clear: both;
+    display: block;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.navbar {
+    border: none;
+    margin: 0 auto;
+}
+
+.navbar-header {
+    width: 100%;
+}
+
+
+@media (max-width: 1075px) {
+    .navbar-header {
+        float: none;
+    }
+    .navbar-left,.navbar-right {
+        float: none !important;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-fixed-top {
+        top: 0;
+        border-width: 0 0 1px;
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+        margin-top: 7.5px;
+    }
+    .navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .collapse.in{
+        display:block !important;
+    }
+}
+
+.navbar-brand {
+    float: left;
+    display: block;
+    margin: 0 auto;
+    max-width: 80%;
+}
+
+@media (min-width: 1076px) {
+    .navbar-brand {
+        float: none;
+    }
+}
+
+nav .logo-wrapper,
+.benefits {
+    background-color: #f3f7f6;
+}
+
+
+nav .logo-top {
+    max-height: 120px;
+}
+
+nav .top-menu {
+    background-color: #1c4489;
+    color: #f3f7f6;
+    margin: 0 auto;
+}
+
+.navbar .navbar-nav {
+  display: inline-block;
+  float: none;
+  vertical-align: top;
+}
+
+.navbar .navbar-collapse {
+  text-align: center;
+}
+
+.top-menu .navbar-nav li {
+    padding: 5px;
+}
+
+.top-menu .navbar-nav .page-scroll {
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #f3f7f6;
+}
+
+nav .logo-top .logotype {
+    min-height: 140px;
+    vertical-align: middle; 
+    padding-top: 20px;
+}
+
+@media (max-width: 767px) {
+    nav .logo-top .logotype {
+        padding-top: 5px;
+        min-height: 68px;
+        max-width: 75%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1075px) {
+    nav .logo-top .logotype {
+        padding-top: 10px;
+        min-height: 80px;
+        max-width: 75%;
+    }
+}
+
+
+.logo-top .logotype img {
+    vertical-align: middle;
+    display: block;
+    margin: 0 auto;
+}
+
+
+.dropdown-menu.columns-3 {
+	min-width: 600px;
+    background-color: #1c4489;
+    color: #f3f7f6;
+}
+.dropdown-menu li a {
+	padding: 5px 15px;
+	font-weight: 300;
+}
+.multi-column-dropdown {
+	list-style: none;
+}
+.multi-column-dropdown li a {
+	display: block;
+	clear: both;
+	line-height: 1.428571429;
+	color: #f3f7f6;
+	white-space: normal;
+}
+.multi-column-dropdown li a:hover {
+	text-decoration: none;
+	color: #f3f7f6;
+	background-color: #1c4489;
+}
+ 
+.top-menu .navbar-nav .dd-page-scroll {
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #f3f7f6;
+}
+
+.multi-column-dropdown li .btn-xl-menu {
+    margin-top: 10px;
+    border: 1px solid;
+    border-radius: 0;
+}
+
+@media (max-width: 767px) {
+	.dropdown-menu.multi-column {
+		min-width: 240px !important;
+		overflow-x: hidden;
+	}
+}
+
+.navbar-default .navbar-nav>li>a:hover,
+.navbar-default .navbar-nav>li>a:focus,
+.navbar-nav a:hover {
+    color: #f3f7f6;
+    text-decoration: none;
+    border-bottom: 2px solid blue;
+}
+
+
+
+section {
+    padding: 45px 0;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/*SHIPPING SECTION*/
+.shipping {
+    background-image: url(../images/bg-shipping.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;   
+    background-position: center center;
+}
+
+.shipping .shipping__caption {
+    padding-bottom: 190px;
+}
+
+.shipping h1 {
+    font-family: 'Fira Sans', sans-serif;
+    color:  #f3f7f6;
+    font-size: 45px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin: 0 0 10px 0;
+}
+
+.shipping .shipping__description {
+    font-family: 'Fira Sans', sans-serif;
+    color:  #f3f7f6;
+    font-size: 25px;
+    font-weight: 400;    
+    margin: 0 0 20px 0;
+}
+
+.shipping .btn-xl {
+  color: #f3f7f6;
+  background-color: transparent;
+  border-color: #f3f7f6;
+  font-family: "Fira Sans", sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 17px;
+  padding: 15px 32px;
+  border-radius: 0;
+}
+.shipping .btn-xl:hover,
+.shipping .btn-xl:focus,
+.shipping .btn-xl:active,
+.shipping .btn-xl.active,
+.shipping .open .dropdown-toggle.btn-xl {
+  background-color: #1c4489;  
+  border-radius: 0;
+}
+
+/*SECTION STATISTICS*/
+.statistics {
+    background-color: #1c4489;
+    padding: 50px 0 65px 0;
+}
+
+@media (max-width: 767px) {
+    .statistics__top {
+        margin-top: 25px;
+    }
+}
+
+.statistics__top--numbers {
+    font-family: 'Fira Sans', sans-serif;
+    color:  #ffffff;
+    font-size: 60px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.statistics__bottom {}
+
+.statistics__bottom--text {
+    font-family: 'Fira Sans', sans-serif;
+    color:  #ffffff;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+/*BENEFITS SECTION*/
+.benefits{
+
+}
+
+.section__name--blue {
+    font-family: 'Fira Sans', sans-serif;
+    color: #1e4388;
+    font-size: 30px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 55px;
+}
+
+.benefits .benefits__item-top {
+    margin-bottom: 20px;
+}
+
+.benefits .benefits__item-top .glyphicon {
+    color: #f3f7f6;
+}
+
+.benefits h4 {
+    font-family: 'Fira Sans', sans-serif;
+    color: #1e4388;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+    @media (max-width: 1085px) {
+    .benefits__item-top {
+        margin-top: 30px;
+    }
+}
+
+/*.benefits__item-bottom {
+    margin: 10px;
+}*/
+
+.benefits__item-bottom .item-bottom__caption {
+    max-width: 140px;
+    overflow: hidden;
+    display: block;
+    margin: 0 auto;
+}
+
+.section__name--white {
+    font-family: 'Fira Sans', sans-serif;
+    color: #f3f7f6;
+    font-size: 30px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 55px;
+}
+
+
+/*TESTIMONIALS SECTION*/
+
+.testimonials {
+    background-image: url(../images/bg-testimonials.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;   
+    background-position: center center;
+    padding: 45px 0 20px 0;
+}
+
+.carousel-controls {
+ position: relative; 
+  width: 70px;
+  margin: 0 auto;
+  bottom: 195px;
+}
+
+@media (max-width: 767px) {
+    .carousel-controls {
+        bottom: 220px;
+    }
+}
+
+.carousel-indicators{
+   top: 0px; 
+}
+
+
+.carousel-control .glyphicon-chevron-right, .carousel-control .icon-next {
+    color: white;
+}
+
+.carousel-picture {
+    max-height: 200px;
+    max-width: 100px;
+}
+
+.carousel-caption {
+    font-family: 'Fira Sans', sans-serif;
+    color:  #ffffff;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 18px;
+}
+
+.carousel-caption h4 {
+    font-family: 'Fira Sans', sans-serif;
+    color:  #ffffff;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 18px;
+}
+
+@media (max-width: 767px) {
+    .carousel-caption {
+        font-size: 14px;
+    }
+    .carousel-caption h4 {
+        font-size: 11px;
+    }
+}
+
+.glyphicon-chevron-left:before,
+.glyphicon-chevron-right:before{
+    border: 3px solid white;
+}
+
+
+/*CALLBACK SECTION*/
+
+.callback {
+    background-color: #115fd4;
+}
+
+.callback .form-group {
+    padding-top: 10px;
+}
+
+.callback .form-group input {
+    max-width: 180px;
+    background-color: #f3f7f6;
+}
+
+.callback .callback__item {
+    padding: 5px 0;
+}
+
+.form-group label {
+    display: inline-block;
+    max-width: 145px;
+    text-align: left;
+    text-transform: uppercase;
+    color: #f3f7f6;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    padding-right: 10px;
+}
+
+    .form-group .label--small {
+        display: none;
+    }
+
+    @media (max-width: 767px) {
+    .form-group .label--phone {
+        display: none;
+    }
+    .form-group .label--small {
+        display: inline-block;
+    }
+}
+
+.form-group .form-control {
+    display: inline-block;
+}
+
+.callback form .btn-lg {
+    font-family: 'Fira Sans', sans-serif;
+    color: #1e4388;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 20px;
+    background-color: #f3f7f6;
+    border-radius: 0;
+    text-transform: uppercase;
+    padding: 16px 23px;
+}
+
+.callback form .btn-lg:hover {
+    font-family: 'Fira Sans', sans-serif;
+    color: #115fd4;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 20px;
+    background-color: #f3f7f6;
+    border-radius: 0;
+}
+
+.callback .text-danger ul {
+    margin-left: 30px;
+}
+
+.callback .text-danger li {
+    max-width: 250px;
+    text-align: left;
+}
+
+.callback form .text-danger {
+    color: red;
+}
+
+
+/*MAP SECTION*/
+
+.map {
+    padding: 0;
+    max-height: 480px;
+}
+
+    .google-maps {
+        position: relative;
+        padding-bottom: 38%; /*This is the aspect ratio*/
+        height: 0;
+        overflow: hidden;
+        /*max-height: 480px;*/
+    }
+    .google-maps iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100% !important;
+        /*height: 100% !important;*/
+    }
+
+    @media (max-width: 767px) {
+    .map {
+        display: none;
+    }
+}
+
+
+/*FOOTER*/
+footer {
+    text-align: center;
+    background-color: black;
+    padding: 35px 0 85px 0;
+}
+
+footer > img {
+    display: block;
+    margin: 0 auto;
+}
+
+footer .copyright {
+    font-family: 'Lato', sans-serif;
+    color:  #ffffff;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 19px;
+}
+
+footer .association {
+    font-family: 'Fira Sans', sans-serif;
+    color:  #ffffff;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 19px;
+    max-width: 770px;
+    display: block;
+    margin: 20px auto 18px;
+    overflow: hidden;
+}
+
+    @media (max-width: 767px) {
+    footer img {
+        margin-bottom: 10px;
+    }
+}
